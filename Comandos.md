@@ -26,24 +26,23 @@
 | `more [archivo]`  | Despliega un output de un comando o contenido de archivo en paginas navegables | more /etc/ssh/sshd_config                |
 | `cp [archivo] [directorio]`  | Para copiar y pegar archivos en otros directorios | cp comandos.md /home/                |
 | `mv [archivo] [directorio]`   | Para mover archivos a otros directorios | mv comandos.md /home/prueba/Comandos                |
-| `sudo adduser [NOMBRE]`  | Para agregar un usuario nuevo |   sudo adduser Wilson              |
-| `sudo passwd [USUARIO]`  | Content |                 |
-| `history`  | Content |                 |
-| `crontab -e`  | Content |                 |
-| `ln -s [Archivo original] [Archivo a enlazar]`  | Content |                 |
-| `ln [Archivo original] [Archivo a enlazar]`  | Content |                 |
-| `lsblk -o NAME,SIZE,FSTYPE,TYPE,MOUNTPOINT`  | Content |                 |
-| `sudo mdadm --create --verbose /dev/md0 --level=5 --raid-devices=4 /dev/sdb /dev/sdc /dev/sdd /dev/sde `  | Content |                 |
-| `sudo mkfs.ext4 -F /dev/md0`  | Content |                 |
-| `whoami`  | Content |                 |
-| `tail -nLineas`  | Content |                 |
-| `head -nLineas`  | Content |                 |
-| `more`  | Content |                 |
-| `ip a`  | Content |                 |
-| `hostname`  | Content |                 |
-| `reboot`  | Content |                 |
-| `shutdown`  | Content |                 |
-| `tar -cvf archivo.tar + "nombre del archivo"`  | Content |                 |
+| `sudo adduser [NOMBRE]`  | Para agregar un usuario nuevo |   sudo adduser fredo              |
+| `sudo passwd [USUARIO]`  | Para cambiar la contraseña de un usuario |  sudo passwd fredo                |
+| `history`  | Para mostrar el registro de comandos de usuario actual | history                |
+| `crontab -e`  | Para editar el archivo de crontab |   crontab -e              |
+| `ln -s [Archivo original] [Archivo a enlazar]`  | Para hacer enlaces suaves |  ln -s /home/prueba/hola.sh /home/prueba/Comandos/               |
+| `ln [Archivo original] [Archivo a enlazar]`  | Para hacer enlaces duros |  ln /home/prueba/hola.sh /home/prueba/Comandos/               |
+| `lsblk -o NAME,SIZE,FSTYPE,TYPE,MOUNTPOINT`  | Para ver los discos actuales de la maquina | lsblk -o NAME,SIZE,FSTYPE,TYPE,MOUNTPOINT                |
+| `sudo mdadm --create --verbose /dev/md0 --level=5 --raid-devices=4 /dev/sdb /dev/sdc /dev/sdd /dev/sde `  | Crea un RAID5 con 4 discos | sudo mdadm --create --verbose /dev/md0 --level=5 --raid-devices=4 /dev/sdb /dev/sdc /dev/sdd /dev/sde                |
+| `sudo mkfs.ext4 -F /dev/md0`  | Para hacer el grupo de discos |  sudo mkfs.ext4 -F /dev/md0               |
+| `whoami`  | Para saber en que usuario estoy actualmente |  whoami               |
+| `tail -nLineas [archivo]`  | Para mostrar una cantidad especifica de lines alfinal de un archivo | tail -10 Comandos.md                 |
+| `head -nLineas`  | Para mostrar una cantidad especifica de lines alfinal de un archivo |  head -10 Comandos.md                |
+| `ip a`  | Para mostrar informacion de la red |   ip a              |
+| `hostname`  | Para mostrar el nombre de la maquina | hostname                |
+| `reboot`  | Reinicia la maquina |   reboot              |
+| `shutdown`  | Apaga la maquina |  shutdown               |
+| `tar -cvf archivo.tar + "nombre del archivo"`  | Comprime un archivo y directorios | tar -cvf archivo.tar + "Comandos"                |
 | `tar -xvf archivo.tar `  | Content |                 |
 | `chmod [Permiso] [Archivo]`  | Content |                 |
 | `chown [Usuario] [Archivo]`  | Content |                 |
