@@ -7,7 +7,7 @@
 |   Comandos    |  Descripción  |  Ejemplo de uso |
 | ------------- | ------------- | --------------- |
 | `ls`  | Es para ver la lista de archivos y directorios en el directorio actual  | ls `output: Comandos.md  README.md` | 
-| `pwd`  | Content  |                 |
+| `pwd`  | Ver la ruta en la esta actualmente  | pwd /home/prueba/Comandos  |
 | `cd`  | Content  |                 |
 | `nano`  | Content  |                 |
 | `mkdir`  | Content |                 |
@@ -74,3 +74,35 @@
 | `docker search linux `  | Content |                 |
 
 
+```stl
+solid cube_corner
+  facet normal 0.0 -1.0 0.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 1.0 0.0 0.0
+      vertex 0.0 0.0 1.0
+    endloop
+  endfacet
+  facet normal 0.0 0.0 -1.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 0.0 1.0 0.0
+      vertex 1.0 0.0 0.0
+    endloop
+  endfacet
+  facet normal -1.0 0.0 0.0
+    outer loop
+      vertex 0.0 0.0 0.0
+      vertex 0.0 0.0 1.0
+      vertex 0.0 1.0 0.0
+    endloop
+  endfacet
+  facet normal 0.577 0.577 0.577
+    outer loop
+      vertex 1.0 0.0 0.0
+      vertex 0.0 1.0 0.0
+      vertex 0.0 0.0 1.0
+    endloop
+  endfacet
+endsolid
+```
