@@ -58,19 +58,20 @@
 | `docker run [Imagen]`  | Crea un contenedor con la imagen deseada  | docker run ubuntu                |
 | `docker run -ti [imagen]`  | Crea un contenedor con la imagen deseada, de forma interactiva y directamente en la terminal  | docker run -ti ubuntu                 |
 | `sudo usermod -aG docker ${USER} & su - ${USER} `  | Hace que el comando docker no sea necesario ejecutarse con sudo | sudo usermod -aG docker fredo & su - fredo  |
-| `docker search [imagen] `  | Content |                 |
-| `docker pull [Imagen] `  | Content |                 |
-| `docker images `  | Content |                 |
-| `sudo docker ps -a `  | Content |                 |
-| `sudo  docker start [ID] `  | Content |                 |
-| `sudo  docker stop [ID] `  | Content |                 |
-| `docker attach [contenedor] `  | Content |                 |
-| `docker run -ti --rm [ID] `  | Content |                 |
-| `docker rm [ID] `  | Content |                 |
-| `docker info `  | Content |                 |
-| `sudo docker rm $(sudo docker ps -a -f status=exited -q) `  | Content |                 |
-| `docker rmi -f [Imagen] `  | Content |                 |
-| `docker search linux `  | Content |                 |
+| `docker search [imagen] `  | Busca imagenes relacionadas  | docker search linux                |
+| `docker pull [Imagen] `  | Instala la imagen  | docker pull ubuntu                |
+| `docker images `  | Muestra las imagenes instaladas | docker images                |
+| `sudo docker ps -a `  | Muestra todos los contenedores e informacion de ellos  |   sudo docker ps -a               |
+| `sudo  docker start [ID] `  | Empieza un contenedor | sudo  docker start ad33d63a2f7i                |
+| `sudo  docker stop [ID] `  | Apaga un contenedor |  sudo  docker stop ad33d63a2f7i                |
+| `docker attach [contenedor] `  | Se mete en la terminal de un contenedor | docker attach ad33d63a2f7i                |
+| `docker run -ti --rm [imagen] `  | Comienza un contenedor, interactivamente y en la terminal, pero cuando cierra la terminnal se borra el contenedor |                docker run -ti --rm ubuntu |
+| `docker rm [ID] `  | Borra el contenedor | docker rm  ad33d63a2f7i              |
+| `docker rmi -f [Imagen] `  | Borra una imagen | docker rmi -f ubuntu                |
+| `docker info `  | Muestra la informacion de la maquina | docker info                |
+| `sudo docker rm $(sudo docker ps -a -f status=exited -q) `  | Borra todos los contenedores que esten en estado apagado | sudo docker rm $(sudo docker ps -a -f status=exited -q)                |
+
+
 
 
 
