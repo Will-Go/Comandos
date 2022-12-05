@@ -1,4 +1,4 @@
-# Comandos de Sistemas Operativos 4/12/2020
+# Comandos de Sistemas Operativos 4/12/2022
 
 ### Estudiante: Wilson Gong Wu
 
@@ -16,17 +16,17 @@
 | `clear`  | Limpiar la terminal  |  clear "Se limpia la consola"            |
 | `htop`  | Ver los procesos actuales interactivamente |  htop "Muestra procesos"     |
 | `ps -aux`  | Ver los procesos, pero en el instante en el que se ejecuto el comando |  ps -aux "Muestra procesos"               |
-| `pstree`  | Content |                 |
-| `kill -9 [PID]`  | Content |                 |
-| `pkill [PID]`  | Content |                 |
-| `sudo apt update && sudo apt upgrade`  | Content  |                 |
-| `man`  | Content |                 |
-| `sudo su`  | Content |                 |
-| `exit`  | Content |                 |
-| `more`  | Content |                 |
-| `cp`  | Content |                 |
-| `mv`  | Content |                 |
-| `sudo adduser [NOMBRE]`  | Content |                 |
+| `pstree`  | Ver los procesos, pero en la instante y en forma de arbole |  pstree "Mueestra procesos"               |
+| `kill -9 [PID]`  | Mata la señal del proceso  |  kill -9 18775               |
+| `pkill [PID]`  | Mata el proceso  |  pkill 18775               |
+| `sudo apt update && sudo apt upgrade`  | Actualiza el repositorio y actualiza el sistema  |  sudo apt update && sudo apt upgrade               |
+| `man`  | Da instrucciones sobre un comando en especifico | man ls                |
+| `sudo su`  | Cambia a un usuario root | sudo su                |
+| `exit`  | Sales de la terminal o usuario | exit                |
+| `more [archivo]`  | Despliega un output de un comando o contenido de archivo en paginas navegables | more /etc/ssh/sshd_config                |
+| `cp [archivo] [directorio]`  | Para copiar y pegar archivos en otros directorios | cp comandos.md /home/                |
+| `mv [archivo] [directorio]`   | Para mover archivos a otros directorios | mv comandos.md /home/prueba/Comandos                |
+| `sudo adduser [NOMBRE]`  | Para agregar un usuario nuevo |   sudo adduser Wilson              |
 | `sudo passwd [USUARIO]`  | Content |                 |
 | `history`  | Content |                 |
 | `crontab -e`  | Content |                 |
