@@ -29,3 +29,6 @@
 | `crontab -e`  | Content |                 |
 | `ln -s [Archivo original] [Archivo a enlazar]`  | Content |                 |
 | `ln [Archivo original] [Archivo a enlazar]`  | Content |                 |
+| `git init`  | Content |                 |
+| `git status`  | Content |                 |
+
