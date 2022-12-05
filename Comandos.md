@@ -7,12 +7,13 @@
 |   Comandos    |  Descripción  |  Ejemplo de uso |
 | ------------- | ------------- | --------------- |
 | `ls`  | Es para ver la lista de archivos y directorios en el directorio actual  | ls `output: Comandos.md  README.md` | 
-| `pwd`  | Ver la ruta en la esta actualmente  | pwd /home/prueba/Comandos  |
-| `cd`  | Content  |                 |
-| `nano`  | Content  |                 |
-| `mkdir`  | Content |                 |
-| `rm`  | Content |                 |
-| `clear`  | Content  |                 |
+| `pwd`  | Ver la ruta en la esta actualmente  | pwd `output: /home/prueba/Comandos`  |
+| `cd [Directorio]`  | Moverse de directorio  | cd /home/ |
+| `nano [Archivo]`  | Editor de texto de archivos  | nano comandos.md   |
+| `mkdir [Nombre]`  | Crear un directorio |  mkdir carpeta01         |
+| `rm [archivo]`  | Borrar un archivo | rm README.md      |
+| `rm -d [directorio]`  | Borrar un directorio | rm -d carpeta01 |
+| `clear`  | Limpiar la terminal  |  clear /*Se limpia la consola/*            |
 | `htop`  | Content |                 |
 | `ps -aux`  | Content |                 |
 | `pstree`  | Content |                 |
@@ -74,35 +75,5 @@
 | `docker search linux `  | Content |                 |
 
 
-```stl
-solid cube_corner
-  facet normal 0.0 -1.0 0.0
-    outer loop
-      vertex 0.0 0.0 0.0
-      vertex 1.0 0.0 0.0
-      vertex 0.0 0.0 1.0
-    endloop
-  endfacet
-  facet normal 0.0 0.0 -1.0
-    outer loop
-      vertex 0.0 0.0 0.0
-      vertex 0.0 1.0 0.0
-      vertex 1.0 0.0 0.0
-    endloop
-  endfacet
-  facet normal -1.0 0.0 0.0
-    outer loop
-      vertex 0.0 0.0 0.0
-      vertex 0.0 0.0 1.0
-      vertex 0.0 1.0 0.0
-    endloop
-  endfacet
-  facet normal 0.577 0.577 0.577
-    outer loop
-      vertex 1.0 0.0 0.0
-      vertex 0.0 1.0 0.0
-      vertex 0.0 0.0 1.0
-    endloop
-  endfacet
-endsolid
-```
+
+
