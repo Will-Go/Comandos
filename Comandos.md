@@ -42,23 +42,22 @@
 | `hostname`  | Para mostrar el nombre de la maquina | hostname                |
 | `reboot`  | Reinicia la maquina |   reboot              |
 | `shutdown`  | Apaga la maquina |  shutdown               |
-| `tar -cvf archivo.tar + "nombre del archivo"`  | Comprime un archivo y directorios | tar -cvf archivo.tar + "Comandos"                |
-| `tar -xvf archivo.tar `  | Content |                 |
-| `chmod [Permiso] [Archivo]`  | Content |                 |
-| `chown [Usuario] [Archivo]`  | Content |                 |
-| `chgrp [Grupo] [Archivo]`  | Content |                 |
-| `apt `  | Content |                 |
-| `du "archivo" `  | Content |                 |
-| `touch [nombreArchivo] `  | Content |                 |
+| `tar -cvf archivo.tar + "nombre del archivo"`  | Comprime un archivo y directorios | tar -cvf comandos.tar + "Comandos"                |
+| `tar -xvf archivo.tar `  | Descomprime un archivo.tar |  tar -xvf comandos.tar               |
+| `chmod [Permiso] [Archivo]`  | Cambia permisos a un archivo | chmod 777 hola.sh               |
+| `chown [Usuario] [Archivo]`  | Cambia de dueño un archivo | chown comandos.md fredo                |
+| `chgrp [Grupo] [Archivo]`  | Cambia de grupo el archivo | chgrp corleones comandos.md                |
+| `du "archivo" `  | Mostrar el tamaño de un archivo |  du comandos.md               |
+| `touch [nombreArchivo] `  | Crea un archivo | touch libros.txt                |
 
 ## Comandos de Docker
 
 |   Comandos    |  Descripción  |  Ejemplo de uso |
 | ------------- | ------------- | --------------- |
-| `docker run [Imagen]`  | Content  |                 |
-| `docker run -ti [imagen]`  | Content  |                 |
-| `sudo usermod -aG docker ${USER} & su - ${USER} `  | Content |                 |
-| `sudo systemctl start docker & sudo systemctl enable docker `  | Content |                 |
+| `sudo systemctl start docker & sudo systemctl enable docker `  | Comienza el docker  |  sudo systemctl start docker & sudo systemctl enable docker               |
+| `docker run [Imagen]`  | Crea un contenedor con la imagen deseada  | docker run ubuntu                |
+| `docker run -ti [imagen]`  | Crea un contenedor con la imagen deseada, de forma interactiva y directamente en la terminal  | docker run -ti ubuntu                 |
+| `sudo usermod -aG docker ${USER} & su - ${USER} `  | Hace que el comando docker no sea necesario ejecutarse con sudo | sudo usermod -aG docker fredo & su - fredo  |
 | `docker search [imagen] `  | Content |                 |
 | `docker pull [Imagen] `  | Content |                 |
 | `docker images `  | Content |                 |
