@@ -13,9 +13,9 @@
 | `mkdir [Nombre]`  | Crear un directorio |  mkdir carpeta01         |
 | `rm [archivo]`  | Borrar un archivo | rm README.md      |
 | `rm -d [directorio]`  | Borrar un directorio | rm -d carpeta01 |
-| `clear`  | Limpiar la terminal  |  clear /*Se limpia la consola/*            |
-| `htop`  | Content |                 |
-| `ps -aux`  | Content |                 |
+| `clear`  | Limpiar la terminal  |  clear "Se limpia la consola"            |
+| `htop`  | Ver los procesos actuales interactivamente |  htop "Muestra procesos"     |
+| `ps -aux`  | Ver los procesos, pero en el instante en el que se ejecuto el comando |  ps -aux "Muestra procesos"               |
 | `pstree`  | Content |                 |
 | `kill -9 [PID]`  | Content |                 |
 | `pkill [PID]`  | Content |                 |
